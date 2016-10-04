@@ -130,11 +130,7 @@ a {
 .show a {
   display: block; }
 
-/* Change color of dropdown links on hover */
-.show a:hover {
-  background-color: #7f9873; }
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* Show the dropdown menu */
 .show {
   display: block;
   position: absolute;

@@ -1,11 +1,13 @@
 ;(function(){ //IIFE for angular
 
-  function Dropdown() {
-    document.getElementByClass("dropdownMenu").classList.toggle("show");
-  }
+//click on the menu, show/hide dropdown
    $('.rightSide a[href="#menu"]').on('click', function(){
      $('.dropdown').toggleClass('dropdownMenu show');
-   })
+   });
+//click on the inside dropdown, show/hide dropdown
+   $('.dropdown a[href]').on('click',function(){
+     $('.dropdown').toggleClass('dropdownMenu show');
+   });
 
   angular.module('vaquita', ['ngRoute'], function($routeProvider){
     $routeProvider
