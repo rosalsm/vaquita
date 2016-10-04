@@ -124,24 +124,26 @@ a {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdownMenu {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+  display: none; }
 
 /* Links inside the dropdown */
-.dropdownMenu a {
-  padding: 12px 16px;
+.show a {
   display: block; }
 
 /* Change color of dropdown links on hover */
-.dropdownMenu a:hover {
-  background-color: #f1f1f1; }
+.show a:hover {
+  background-color: #7f9873; }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
-  display: block; }
+  display: block;
+  position: absolute;
+  width: 11%;
+  top: 100px;
+  right: 34px;
+  background-color: #8dba92;
+  border-radius: 0 0 10px 10px;
+  padding-left: 23px; }
 
 /*
  * Hide only visually, but have it available for screen readers:
