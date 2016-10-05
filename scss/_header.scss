@@ -1,24 +1,31 @@
 $lightgreen:#8dba92;
 $darkgreen: #7f9873;
 $headerfont: #424f45;
-
+$mainpagebackg: #F5E1CC;
 
 .mainContainer {
   font-family: Roboto;
   font-size: 1.5rem;
+  //background-color: $mainpagebackg;
 }
 
 .mainHeader {
+  background-color: $lightgreen;
+  //opacity: 0.5;
+}
+.backgroundHeader{
+  //opacity: 0.5;
+}
+.headerContent {
   display: flex;
   flex-direction: row;
-  background-color: $lightgreen;
   justify-content: space-around;
   align-items: center;
   height: 5rem;
   margin-top: 2rem;
 
 }
-.mainHeader a {
+.headerContent a {
   color: $headerfont;
 
 }
@@ -46,7 +53,7 @@ $headerfont: #424f45;
 }
 .vaquitaName {
   height: 7rem;
-  background-color: $darkgreen;
+  background-color: $lightgreen;
   border-radius: 1rem;
   display: flex;
   align-items: center;

@@ -46,7 +46,6 @@ hr {
 audio,
 canvas,
 iframe,
-img,
 svg,
 video {
   vertical-align: middle; }
@@ -85,15 +84,17 @@ a {
   font-size: 1.5rem; }
 
 .mainHeader {
+  background-color: #8dba92; }
+
+.headerContent {
   display: flex;
   flex-direction: row;
-  background-color: #8dba92;
   justify-content: space-around;
   align-items: center;
   height: 5rem;
   margin-top: 2rem; }
 
-.mainHeader a {
+.headerContent a {
   color: #424f45; }
 
 .mainHeader .vaquitaName {
@@ -114,7 +115,7 @@ a {
 
 .vaquitaName {
   height: 7rem;
-  background-color: #7f9873;
+  background-color: #8dba92;
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -140,6 +141,9 @@ a {
   background-color: #8dba92;
   border-radius: 0 0 10px 10px;
   padding-left: 23px; }
+
+.img-container-home {
+  width: 100%; }
 
 /*
  * Hide only visually, but have it available for screen readers:

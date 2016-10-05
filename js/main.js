@@ -11,8 +11,11 @@
 
   angular.module('vaquita', ['ngRoute'], function($routeProvider){
     $routeProvider
-      .when('/',{
+      .when('/', {
         redirectTo: 'home'
+      })
+      .when('/home', {
+        templateUrl: 'partials/home.html'
       })
       .when('/locations', {
         templateUrl: 'partials/locations.html'
