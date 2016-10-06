@@ -1,48 +1,36 @@
 .img-container-home {
-
-
-  //display: flex;
-  //flex-direction: row;
-  width: 100%;
-  //justify-content: flex-start;
-  //flex-wrap: wrap;
-  //align-content: flex-start;
-
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
 }
-// .foto1 {
-//   position: absolute;
-//   //top: 193px;
-//   width: 28%;
-//
-// }
-// .foto2 {
-//   position: absolute;
-//   //top: 193px;
-//   left: 356px;
-//   width: 27%;
-// }
-// .foto3 {
-//   position: absolute;
-//   right: 0px;
-//   width: 45.5%;
-// }
-// .foto4 {
-//     position: absolute;
-//     //right: 11px;
-//     top: 473px;
-//     width: 54.5%;
-// }
-// .foto5 {
-//   position: absolute;
-//   right: 0;
-//   top: 771px;
-//   width: 45.5%;
-//   height: 433px;
-// }
-//
-// .foto6 {
-//     position: absolute;
-//     top: 939px;
-//     width: 54.5%;
-//     height: 265px;
-// }
+
+div.left-top-4 {
+  width: 55%;
+  font-size: 0;
+}
+.left-top-4 > img.fotosquare {
+  width: 50%;
+  height: 50%;
+}
+div.right-top-1 {
+  width: 45%;
+}
+img.foto3 {
+  width: 100%;
+  height: 100%;
+}
+
+div.bottom-2 {
+  width: 100%;
+  font-size: 0;
+}
+img.foto6 {
+  width: 60%;
+  height: 100%;
+}
+img.foto7 {
+  width: 40%;
+  height: 100%;
+}
