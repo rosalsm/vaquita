@@ -56,7 +56,7 @@ hr {
 audio,
 canvas,
 iframe,
-img,
+//img,
 svg,
 video {
     vertical-align: middle;
@@ -99,6 +99,7 @@ textarea {
    }
 
    @import "header";
+   @import "home";
 
 
 
