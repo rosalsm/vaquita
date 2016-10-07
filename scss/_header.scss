@@ -1,20 +1,24 @@
 $lightgreen:#8dba92;
 $darkgreen: #7f9873;
-$headerfont: #424f45;
+$headerfont: #F7F1DB;
 $mainpagebackg: #F5E1CC;
+
+
+html {
+  background: url(/img/summer.jpg) no-repeat center center fixed;
+}
 
 .mainContainer {
   font-family: Roboto;
   font-size: 1.5rem;
-  //background-color: $mainpagebackg;
 }
 
-.mainHeader {
-  background-color: $lightgreen;
-  //opacity: 0.5;
-}
+
 .backgroundHeader{
-  //opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  background: rgba(127,152,115,0.4);
+
 }
 .headerContent {
   display: flex;
@@ -22,7 +26,7 @@ $mainpagebackg: #F5E1CC;
   justify-content: space-around;
   align-items: center;
   height: 5rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 
 }
 .headerContent a {
@@ -41,10 +45,7 @@ $mainpagebackg: #F5E1CC;
   width: 35%;
 }
 
-.leftSide {
 
-
-}
 .leftSide a {
   margin-left:2rem;
 }
@@ -52,14 +53,11 @@ $mainpagebackg: #F5E1CC;
   margin-right: 2rem;
 }
 .vaquitaName {
-  height: 7rem;
-  background-color: $lightgreen;
   border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20%;
-  box-shadow: -10px -10px 33px -3px rgba(127,152,115,0.68);
 }
 
 
@@ -80,7 +78,6 @@ $mainpagebackg: #F5E1CC;
   width: 11%;
   top: 100px;
   right: 34px;
-  background-color: $lightgreen;
   border-radius: 0 0 10px 10px;
   padding-left: 23px;
 

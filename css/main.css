@@ -79,12 +79,17 @@ textarea {
 a {
   text-decoration: none; }
 
+html {
+  background: url(/img/summer.jpg) no-repeat center center fixed; }
+
 .mainContainer {
   font-family: Roboto;
   font-size: 1.5rem; }
 
-.mainHeader {
-  background-color: #8dba92; }
+.backgroundHeader {
+  position: absolute;
+  width: 100%;
+  background: rgba(127, 152, 115, 0.4); }
 
 .headerContent {
   display: flex;
@@ -92,10 +97,10 @@ a {
   justify-content: space-around;
   align-items: center;
   height: 5rem;
-  margin-top: 2rem; }
+  margin-top: 0.5rem; }
 
 .headerContent a {
-  color: #424f45; }
+  color: #F7F1DB; }
 
 .mainHeader .vaquitaName {
   font-size: 2.5rem;
@@ -114,14 +119,11 @@ a {
   margin-right: 2rem; }
 
 .vaquitaName {
-  height: 7rem;
-  background-color: #8dba92;
   border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20%;
-  box-shadow: -10px -10px 33px -3px rgba(127, 152, 115, 0.68); }
+  width: 20%; }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdownMenu {
@@ -138,7 +140,6 @@ a {
   width: 11%;
   top: 100px;
   right: 34px;
-  background-color: #8dba92;
   border-radius: 0 0 10px 10px;
   padding-left: 23px; }
 
@@ -146,8 +147,7 @@ a {
   display: flex;
   width: 100vw;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 0.5em; }
+  flex-wrap: wrap; }
 
 div.left-top-4 {
   width: 55%;
