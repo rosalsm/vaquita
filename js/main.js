@@ -1,7 +1,7 @@
 ;(function(){ //IIFE for angular
 
 //click on the menu, show/hide dropdown
-   $('.rightSide a[href="#menu"]').on('click', function(){
+   $('.nav-container .menu-drop').on('click', function(){
      $('.dropdown').toggleClass('dropdownMenu show');
    });
 //click on the inside dropdown, show/hide dropdown
