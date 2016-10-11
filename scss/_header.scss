@@ -2,6 +2,7 @@ $lightgreen:#8dba92;
 $darkgreen: #7f9873;
 $headerfont: #F7F1DB;
 $mainpagebackg: #F5E1CC;
+$redbackg: #EA2306;
 
 
 html {
@@ -36,12 +37,14 @@ html {
   margin: 0.3em 0.3em 0.3em 0.3em;
   //background: rgba(142,145,139,0.7);
   background: rgba(0,0,0,0.7);
+  padding-right: 1em;
+  padding-left: 0.1em;
 
 }
 
 
 .nav-container a:hover {
-  background-color: #Ea2306;
+  background-color: $redbackg;
 }
 .mainHeader .vaquitaName {
   font-size: 2.5rem;
@@ -97,15 +100,22 @@ nav.circle-menu:hover {
   height: 6em;
   top: 6.5em;
   right: 3.5em;
-  background-color: #ea2306;
+  background-color: $redbackg;
+
   p{
     display: none;
   }
   .menu-home {
     display: flex;
     flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     a{
       color: $headerfont;
+    }
+    a:first-child {
+      border-bottom: 0.1em solid $headerfont;
     }
 
   }
@@ -119,17 +129,21 @@ nav.circle-menu:hover {
 
 /* Links inside the dropdown */
 .show a {
-    display: block;
+
 }
 
 /* Show the dropdown menu */
 .show {
   display:block;
-  position: absolute;
-  width: 11%;
-  top: 100px;
-  right: 34px;
-  border-radius: 0 0 10px 10px;
-  padding-left: 23px;
+  //top: 100px;
+  //right: 34px;
+  padding-left: 13px;
+  a {
+    font-size: 0.9em;
+    padding-right: 0em;
+    padding-left: 0.1em;
+    display: block;
+  }
+  //background-color: $redbackg;
 
 }

@@ -96,10 +96,12 @@ html {
 .nav-container a {
   color: #F7F1DB;
   margin: 0.3em 0.3em 0.3em 0.3em;
-  background: rgba(0, 0, 0, 0.7); }
+  background: rgba(0, 0, 0, 0.7);
+  padding-right: 1em;
+  padding-left: 0.1em; }
 
 .nav-container a:hover {
-  background-color: #Ea2306; }
+  background-color: #EA2306; }
 
 .mainHeader .vaquitaName {
   font-size: 2.5rem;
@@ -141,32 +143,34 @@ nav.circle-menu:hover {
   height: 6em;
   top: 6.5em;
   right: 3.5em;
-  background-color: #ea2306; }
+  background-color: #EA2306; }
   nav.circle-menu:hover p {
     display: none; }
   nav.circle-menu:hover .menu-home {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     nav.circle-menu:hover .menu-home a {
       color: #F7F1DB; }
+    nav.circle-menu:hover .menu-home a:first-child {
+      border-bottom: 0.1em solid #F7F1DB; }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdownMenu {
   display: none; }
 
 /* Links inside the dropdown */
-.show a {
-  display: block; }
-
 /* Show the dropdown menu */
 .show {
   display: block;
-  position: absolute;
-  width: 11%;
-  top: 100px;
-  right: 34px;
-  border-radius: 0 0 10px 10px;
-  padding-left: 23px; }
+  padding-left: 13px; }
+  .show a {
+    font-size: 0.9em;
+    padding-right: 0em;
+    padding-left: 0.1em;
+    display: block; }
 
 .img-container-home {
   display: flex;
