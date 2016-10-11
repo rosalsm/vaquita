@@ -86,44 +86,69 @@ html {
   font-family: Roboto;
   font-size: 1.5rem; }
 
-.backgroundHeader {
-  position: absolute;
-  width: 100%;
-  background: rgba(127, 152, 115, 0.4); }
-
-.headerContent {
+.nav-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 5rem;
-  margin-top: 0.5rem; }
+  flex-direction: column;
+  position: fixed;
+  top: 6em;
+  left: 1em; }
 
-.headerContent a {
-  color: #F7F1DB; }
+.nav-container a {
+  color: #F7F1DB;
+  margin: 0.3em 0.3em 0.3em 0.3em;
+  background: rgba(0, 0, 0, 0.7); }
+
+.nav-container a:hover {
+  background-color: #Ea2306; }
 
 .mainHeader .vaquitaName {
   font-size: 2.5rem;
   font-family: Indie FLower; }
 
-.rightSide, .leftSide {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 35%; }
-
-.leftSide a {
-  margin-left: 2rem; }
-
-.rightSide a {
-  margin-right: 2rem; }
-
 .vaquitaName {
-  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20%; }
+  background-color: #8e918b; }
+  .vaquitaName img {
+    width: 49%; }
+  .vaquitaName h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    font-size: 1em;
+    color: #192223; }
+
+nav.circle-menu {
+  position: fixed;
+  top: 7em;
+  right: 4em;
+  border-radius: 50%;
+  background-color: black;
+  width: 4em;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  nav.circle-menu p {
+    color: #F7F1DB; }
+  nav.circle-menu .menu-home {
+    display: none; }
+
+nav.circle-menu:hover {
+  width: 6em;
+  height: 6em;
+  top: 6.5em;
+  right: 3.5em;
+  background-color: #ea2306; }
+  nav.circle-menu:hover p {
+    display: none; }
+  nav.circle-menu:hover .menu-home {
+    display: flex;
+    flex-direction: column; }
+    nav.circle-menu:hover .menu-home a {
+      color: #F7F1DB; }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdownMenu {
