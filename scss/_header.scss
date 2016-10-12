@@ -6,7 +6,7 @@ $redbackg: #EA2306;
 
 
 html {
-  background: url(/img/summer.jpg) no-repeat center center fixed;
+  background: url(/img/greywood.jpg) no-repeat center center fixed;
 }
 
 .mainContainer {
@@ -36,7 +36,7 @@ html {
   color: $headerfont;
   margin: 0.3em 0.3em 0.3em 0.3em;
   //background: rgba(142,145,139,0.7);
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,1);
   padding-right: 1em;
   padding-left: 0.1em;
 
@@ -59,10 +59,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #8e918b;
+  //background-color: #8e918b;
+  background-color: black;
   // width: 20%;
   img {
     width: 49%;
+    //box-shadow: 2px 2px 1px 1px white;
   }
   h2 {
     display: flex;
@@ -70,7 +72,7 @@ html {
     justify-content: center;
     width: 25%;
     font-size: 1em;
-    color: #192223;;
+    color: $headerfont;
 
 
   }
@@ -87,12 +89,15 @@ nav.circle-menu {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s;
 
   p {
     color: $headerfont;
   }
   .menu-home {
-    display: none;
+    a {
+      font-size: 0;
+    }
   }
 }
 nav.circle-menu:hover {
@@ -113,6 +118,7 @@ nav.circle-menu:hover {
     justify-content: center;
     a{
       color: $headerfont;
+      font-size: 1em;
     }
     a:first-child {
       border-bottom: 0.1em solid $headerfont;
@@ -135,8 +141,6 @@ nav.circle-menu:hover {
 /* Show the dropdown menu */
 .show {
   display:block;
-  //top: 100px;
-  //right: 34px;
   padding-left: 13px;
   a {
     font-size: 0.9em;
@@ -144,6 +148,4 @@ nav.circle-menu:hover {
     padding-left: 0.1em;
     display: block;
   }
-  //background-color: $redbackg;
-
 }

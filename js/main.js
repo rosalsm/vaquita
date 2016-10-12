@@ -1,9 +1,13 @@
-;(function(){ //IIFE for angular
+;(function(){ //IIFE 
 
-//click on the menu, show/hide dropdown
+//click on the "menu", show/hide dropdown
    $('.nav-container .menu-drop').on('click', function(){
      $('.dropdown').toggleClass('dropdownMenu show');
    });
+//click on the nav, hide dropdown
+    $('.nav-container a[href]').on('click', function(){
+      $('.dropdown').removeClass('show').addClass('dropdownMenu');
+    });
 //click on the inside dropdown, show/hide dropdown
    $('.dropdown a[href]').on('click',function(){
      $('.dropdown').toggleClass('dropdownMenu show');
