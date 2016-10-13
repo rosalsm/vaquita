@@ -107,11 +107,20 @@ html {
   font-size: 2.5rem;
   font-family: Indie FLower; }
 
+.shrink {
+  margin: -20px 0; }
+
 .vaquitaName {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  z-index: 9999;
+  top: 0;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black; }
+  background-color: black;
+  width: 100%; }
   .vaquitaName img {
     width: 49%; }
   .vaquitaName h2 {
