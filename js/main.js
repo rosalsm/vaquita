@@ -10,7 +10,7 @@
     });
 //click on the inside dropdown, show/hide dropdown
    $('.dropdown a[href]').on('click',function(){
-     $('.dropdown').toggleClass('dropdownMenu show');
+     $('.dropdown').removeClass('show').addClass('dropdownMenu');
    });
 
 

@@ -267,6 +267,10 @@ address.address-location {
 iframe {
   margin-bottom: 0.5em; }
 
+.restaurant-show {
+  width: 100%;
+  font-size: 5em; }
+
 /*
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
