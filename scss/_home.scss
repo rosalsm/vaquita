@@ -33,3 +33,25 @@ img.foto7 {
   width: 40%;
   height: 100%;
 }
+.container-nyt {
+  display: flex;
+  position: absolute;
+  top: 37%;
+  left: 10em;
+
+}
+
+div.background-nyt {
+  //width: 90%;
+  background: rgba(247,241,219,0.7);
+
+}
+div.text-nyt {
+  color: $almostblack;
+  font-size: 0.8em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+img.NYT-logo {
+  width: 8em;
+}

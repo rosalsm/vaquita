@@ -16,17 +16,6 @@
 
 //shrinking header on scrolling
 
-      // $(document).on("scroll", function(){
-      //   if ($(document).scrollTop() > 100){
-      //     $("div.vaquitaName").addClass("shrink");
-      //     updateSliderMargin();
-      //   }
-      //   else {
-      //     $("div.vaquitaName").removeClass("shrink");
-      //     updateSliderMargin();
-      //   }
-      // });
-
       $(window).scroll(function() {
         if ($(this).scrollTop() > 1){
           $('.vaquitaName').addClass("shrink");
