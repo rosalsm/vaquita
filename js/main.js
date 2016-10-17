@@ -30,9 +30,13 @@
       $(window).scroll(function() {
         if ($(this).scrollTop() > 1){
           $('.vaquitaName').addClass("shrink");
+          $('.vaquitaName img').addClass('shrink-image');
+          $('.vaquitaName h2').addClass('shrink-title');
         }
         else{
           $('.vaquitaName').removeClass("shrink");
+          $('.vaquitaName img').removeClass('shrink-image');
+          $('.vaquitaName h2').removeClass('shrink-title');
         }
       });
 
