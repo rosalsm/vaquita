@@ -295,6 +295,35 @@ address.address-location {
 iframe {
   margin-bottom: 0.5em; }
 
+.container-menurest {
+  margin-top: 3em; }
+
+.fotos-menu-rest {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .fotos-menu-rest .fotos-rest {
+    width: 100%; }
+
+.fotos-menu-rest .inside-fotorest {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center; }
+  .fotos-menu-rest .inside-fotorest h3 {
+    font-size: 0; }
+
+.fotos-menu-rest .inside-fotorest:hover h3 {
+  font-size: 2em; }
+
 .restaurant-show {
   width: 80%;
   font-size: 3em;
