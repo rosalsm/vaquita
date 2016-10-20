@@ -309,18 +309,36 @@ iframe {
   .fotos-menu-rest .fotos-rest {
     width: 100%; }
 
-.inside-fotorest1 .contenth3, .inside-fotorest2 .contenth3, .inside-fotorest3 .contenth3, .inside-fotorest4 .contenth3 {
+.inside-fotorest1 h3, .inside-fotorest2 h3, .inside-fotorest3 h3, .inside-fotorest4 h3 {
+  position: absolute;
+  font-size: 0rem;
+  color: #F7F1DB;
+  margin-top: 92%;
+  margin-left: 75%; }
+
+.inside-fotorest1 .contenth3 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30%;
-  background: rgba(0, 0, 0, 0.7); }
-  .inside-fotorest1 .contenth3 h3, .inside-fotorest2 .contenth3 h3, .inside-fotorest3 .contenth3 h3, .inside-fotorest4 .contenth3 h3 {
-    position: absolute;
-    font-size: 0rem;
-    color: #F7F1DB;
-    float: right;
-    margin-top: 92%; }
+  width: 30%; }
+
+.inside-fotorest2 .contenth3 {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 30%; }
+
+.inside-fotorest3 .contenth3 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 30%; }
+
+.inside-fotorest4 .contenth3 {
+  position: absolute;
+  top: 150%;
+  left: 0;
+  width: 30%; }
 
 .inside-fotorest1:hover h3, .inside-fotorest2:hover h3, .inside-fotorest3:hover h3, .inside-fotorest4:hover h3 {
   font-size: 1rem; }
