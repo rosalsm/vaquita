@@ -1,3 +1,34 @@
+.container-taqueria {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  //align-content: center;
+
+}
+.address-taqueria {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+
+  h2 {
+    //width: 30%;
+  }
+  p {
+    //width: 40%;
+  }
+}
+.fotos-taqueria {
+
+  width: 100%;
+  height: 25%;
+  font-size: 0;
+
+  img {
+    width: 25%;
+    height: 100%
+  }
+}
+
 .menu-taqueria {
   width: 80%;
   font-size: 3em;
