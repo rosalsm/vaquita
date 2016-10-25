@@ -359,15 +359,26 @@ iframe {
 
 .address-taqueria {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
+  .address-taqueria h4 {
+    margin: 0; }
+  .address-taqueria p {
+    margin: 0; }
 
 .fotos-taqueria {
-  width: 100%;
-  height: 25%;
-  font-size: 0; }
-  .fotos-taqueria img {
-    width: 25%;
-    height: 100%; }
+  margin-left: 5%;
+  margin-top: 1em; }
+
+.fotos-taqueria-2 {
+  margin-left: 60%;
+  margin-top: 3em; }
+
+.fotos-taqueria, .fotos-taqueria-2 {
+  color: #F7F1DB; }
+  .fotos-taqueria .foto-text, .fotos-taqueria-2 .foto-text {
+    padding-left: 67%;
+    padding-top: 61%; }
 
 .menu-taqueria {
   width: 80%;
