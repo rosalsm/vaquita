@@ -4,6 +4,20 @@
   flex-direction: column;
 
 }
+.phone-number-taqueria {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: $redbackg;
+  .fa-phone-square {
+    font-size: 1em;
+  }
+  h4 {
+    margin: 0;
+  }
+}
+
+
 .address-taqueria {
   display: flex;
   flex-direction: column;
@@ -14,10 +28,18 @@
   p {
     margin: 0;
   }
+  .name-taqueria {
+    font-family: Indie FLower;
+  }
 }
 .fotos-taqueria {
   margin-left: 5%;
   margin-top: 1em;
+}
+.fotos-taqueria:hover, .fotos-taqueria-2:hover {
+  .foto-text {
+    opacity: 1;
+  }
 }
 .fotos-taqueria-2 {
   margin-left: 60%;
@@ -28,6 +50,8 @@
   .foto-text {
     padding-left: 67%;
     padding-top: 61%;
+    opacity: 0;
+    transition: all 0.4s;
   }
 }
 

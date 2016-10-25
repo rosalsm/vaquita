@@ -357,6 +357,16 @@ iframe {
   display: flex;
   flex-direction: column; }
 
+.phone-number-taqueria {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: #EA2306; }
+  .phone-number-taqueria .fa-phone-square {
+    font-size: 1em; }
+  .phone-number-taqueria h4 {
+    margin: 0; }
+
 .address-taqueria {
   display: flex;
   flex-direction: column;
@@ -365,10 +375,15 @@ iframe {
     margin: 0; }
   .address-taqueria p {
     margin: 0; }
+  .address-taqueria .name-taqueria {
+    font-family: Indie FLower; }
 
 .fotos-taqueria {
   margin-left: 5%;
   margin-top: 1em; }
+
+.fotos-taqueria:hover .foto-text, .fotos-taqueria-2:hover .foto-text {
+  opacity: 1; }
 
 .fotos-taqueria-2 {
   margin-left: 60%;
@@ -378,7 +393,9 @@ iframe {
   color: #F7F1DB; }
   .fotos-taqueria .foto-text, .fotos-taqueria-2 .foto-text {
     padding-left: 67%;
-    padding-top: 61%; }
+    padding-top: 61%;
+    opacity: 0;
+    transition: all 0.4s; }
 
 .menu-taqueria {
   width: 80%;
