@@ -13,6 +13,12 @@
      $('.dropdown').removeClass('show').addClass('dropdownMenu');
    });
 
+//Hamburger
+  $('.fa-bars').on('click', function(){
+    $('.headerContent nav').toggleClass('showing nav-container');
+  });
+  
+
 
 //shrinking header on scrolling
 

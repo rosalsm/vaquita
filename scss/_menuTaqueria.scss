@@ -4,13 +4,20 @@
   flex-direction: column;
 
 }
+
+
 .phone-number-taqueria {
+  display: flex;
+  width: 20%;
   position: fixed;
   right: 0;
   bottom: 0;
   color: $redbackg;
+  margin-bottom: 5%;
   .fa-phone-square {
     font-size: 1em;
+    margin-top: 3px;
+    margin-right: 5px;
   }
   h4 {
     margin: 0;
