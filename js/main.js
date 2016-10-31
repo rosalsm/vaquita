@@ -7,7 +7,7 @@
 //click on the nav, hide dropdown
     $('.nav-container a[href]').on('click', function(){
       $('.dropdown').removeClass('show').addClass('dropdownMenu');
-      $('.headerContent nav').removeClass('showing').addClass ('nav-container');
+      $('.headerContent .navi').removeClass('showing').addClass ('nav-container');
     });
 //click on the inside dropdown, show/hide dropdown
    $('.dropdown a[href]').on('click',function(){
