@@ -66,7 +66,7 @@ html {
   padding-top: 1em;
   padding-bottom: 1em;
   background-color: black;
-  width: 100%;
+  width: 100vw;
   max-height: 2.5em;
   font-family: Indie FLower;
   img {
@@ -190,7 +190,7 @@ nav.circle-menu:hover {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 3em;
+    top: 4em;
     left: 0.1em;
     a {
       color: $headerfont;
@@ -205,4 +205,12 @@ nav.circle-menu:hover {
     display: none;
   }
 
+  .shrink-image {
+    height: 46px;
+  }
+  .vaquitaName {
+    img {
+      height: 46px;
+    }
+  }
 }

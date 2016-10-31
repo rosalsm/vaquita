@@ -126,7 +126,7 @@ html {
   padding-top: 1em;
   padding-bottom: 1em;
   background-color: black;
-  width: 100%;
+  width: 100vw;
   max-height: 2.5em;
   font-family: Indie FLower; }
   .vaquitaName img {
@@ -214,7 +214,7 @@ nav.circle-menu:hover {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 3em;
+    top: 4em;
     left: 0.1em; }
     .showing a {
       color: #F7F1DB;
@@ -223,7 +223,11 @@ nav.circle-menu:hover {
       padding-right: 1em;
       padding-left: 0.2em; }
   nav.circle-menu {
-    display: none; } }
+    display: none; }
+  .shrink-image {
+    height: 46px; }
+  .vaquitaName img {
+    height: 46px; } }
 
 .img-container-home {
   display: flex;
@@ -286,17 +290,25 @@ img.NYT-logo {
   width: 8em;
   padding-left: 3%; }
 
+@media (max-width: 767px) {
+  div.left-top-1 {
+    width: 100%;
+    font-size: 0; }
+  .img-container-home {
+    flex-direction: column; }
+  .all-right {
+    width: 100%; } }
+
 .locations-container {
   display: flex;
   margin-top: 4em;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column; }
 
 div.restaurante, div.taqueria {
   width: 70%;
-  border-radius: 1em;
   margin-left: 14%;
   margin-top: 1em;
   display: flex;
@@ -320,7 +332,21 @@ address.address-location {
   width: 70%; }
 
 iframe {
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  width: 80%;
+  height: 250px; }
+
+@media (max-width: 767px) {
+  div.restaurante, div.taqueria {
+    width: 100%;
+    margin-left: 5%; }
+  div.foto-address-location {
+    flex-direction: column;
+    width: 100%; }
+  address.address-location {
+    width: 95%; }
+  iframe {
+    width: 90%; } }
 
 .container-menurest {
   margin-top: 3em;

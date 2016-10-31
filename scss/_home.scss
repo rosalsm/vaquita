@@ -68,3 +68,21 @@ img.NYT-logo {
   width: 8em;
   padding-left: 3%;
 }
+
+
+@media (max-width: 767px) {
+  div.left-top-1 {
+    width: 100%;
+    font-size: 0;
+  }
+
+  .img-container-home {
+
+    flex-direction: column;
+  }
+
+  .all-right {
+    width: 100%;
+  }
+
+}
