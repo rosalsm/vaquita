@@ -24,6 +24,7 @@ div.restaurante, div.taqueria{
 p.name-location {
   font-size: 1.5em;
   font-family: Indie FLower;
+  font-weight: bolder;
 }
 
 div.foto-address-location {
@@ -43,6 +44,7 @@ iframe {
   margin-bottom: 0.5em;
   width: 80%;
   height: 250px;
+  border: 0.2em solid #444442;
 }
 
 @media (max-width: 767px) {
