@@ -3,12 +3,13 @@
   margin-top: 3em;
   display: flex;
   flex-direction: row;
+
 }
 
 
 
 .fotos-menu-rest {
-  width: 30%;
+  width: 25%;
   line-height: 0;
   display: flex;
   flex-direction: column;
@@ -19,50 +20,51 @@
     width: 100%;
   }
 }
-.inside-fotorest1, .inside-fotorest2, .inside-fotorest3, .inside-fotorest4{
+.inside-fotorest1, .inside-fotorest2, .inside-fotorest3, .inside-fotorest4, .inside-fotorest5, .inside-fotorest6, .inside-fotorest7, .inside-fotorest8{
+  //position: relative;
     h3 {
       position: absolute;
       font-size: 0rem;
       color: $headerfont;
       //float: right;
       margin-top: 92%;
-      margin-left: 75%;
+      margin-left: 5%;
     }
   }
 
-
-.inside-fotorest1 {
-  .contenth3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-}
-}
-.inside-fotorest2 {
-  .contenth3 {
-    position: absolute;
-    top: 80%;
-    left: 0;
-    width: 30%;
-}
-}
-.inside-fotorest3 {
-  .contenth3 {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 30%;
-}
-}
-.inside-fotorest4 {
-  .contenth3 {
-    position: absolute;
-    top: 150%;
-    left: 0;
-    width: 30%;
-}
-}
+//
+// .inside-fotorest1 {
+//   .contenth3 {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 30%;
+// }
+// }
+// .inside-fotorest2 {
+//   .contenth3 {
+//     position: absolute;
+//     top: 80%;
+//     left: 0;
+//     width: 30%;
+// }
+// }
+// .inside-fotorest3 {
+//   .contenth3 {
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     width: 30%;
+// }
+// }
+// .inside-fotorest4 {
+//   .contenth3 {
+//     position: absolute;
+//     top: 150%;
+//     left: 0;
+//     width: 30%;
+// }
+// }
 
 .inside-fotorest1:hover, .inside-fotorest2:hover, .inside-fotorest3:hover, .inside-fotorest4:hover {
   h3 {
@@ -71,14 +73,23 @@
 }
 
 .menu-restaurant {
-  width: 70%;
+  width: 50%;
 
 }
 
 .restaurant-show {
   width: 80%;
-  font-size: 3em;
-  margin-left: 3em;
-  margin-top: 3em;
+  font-size: 0.8em;
+  margin-left: 1.5em;
+  margin-top: 4em;
+  h3 {
+    font-weight: bolder;
+    margin-bottom: 0.2em;
+  }
+  p {
+    margin-left: 0.4em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
 
 }
