@@ -15,28 +15,17 @@ html {
   font-size: 1.5rem;
 }
 
-
-.backgroundHeader{
-
-
-}
 .nav-container {
   display: flex;
   flex-direction: column;
-  //justify-content: flex-start;
-  //align-items: flex-start;
-  //height: 5rem;
-  //margin-top: 0.5rem;
   position: fixed;
   top: 6em;
   left: 1em;
-  //width: 15%;
 
 }
 .nav-container a {
   color: $headerfont;
   margin: 0.3em 0.3em 0.3em 0.3em;
-  //background: rgba(142,145,139,0.7);
   background: rgba(0,0,0,1);
   padding-right: 1em;
   padding-left: 0.2em;
@@ -51,8 +40,6 @@ html {
 
 .shrink {
   margin: -20px 0;
-  //padding-top: 1em;
-  //padding-bottom: 1em;
 }
 
 .shrink-image {
@@ -76,11 +63,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  //background-color: #8e918b;
   padding-top: 1em;
   padding-bottom: 1em;
   background-color: black;
-  width: 100%;
+  width: 100vw;
   max-height: 2.5em;
   font-family: Indie FLower;
   img {
@@ -89,22 +75,20 @@ html {
     -moz-transition: all 0.4s ease-in-out;
     z-index: 9999;
     top: 0;
-    //box-shadow: 2px 2px 1px 1px white;
   }
   h2 {
     display: flex;
-    //align-items: center;
     justify-content: center;
     width: 25%;
-    //padding-top: 0.3em;
-    //font-size: 1em;
     color: $headerfont;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     z-index: 9999;
     top: 0;
-
-
+  }
+  .fa-bars {
+    // display: none;
+    font-size: 0;
   }
 }
 
@@ -178,5 +162,55 @@ nav.circle-menu:hover {
     padding-right: 0em;
     padding-left: 0.1em;
     display: block;
+  }
+}
+
+
+
+//MOBILE
+
+@media (max-width: 767px) {
+
+  .vaquitaName {
+    justify-content: space-around;
+
+    h2.regular {
+      display: none;
+    }
+    .fa-bars {
+      font-size: 1em;
+      color: $headerfont;
+      //display: block;
+    }
+  }
+  .nav-container {
+    display: none;
+  }
+  .showing {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 4em;
+    left: 0.1em;
+    a {
+      color: $headerfont;
+      margin: 0.3em 0.3em 0.3em 0.3em;
+      background: rgba(0,0,0,1);
+      padding-right: 1em;
+      padding-left: 0.2em;
+
+    }
+  }
+  nav.circle-menu {
+    display: none;
+  }
+
+  .shrink-image {
+    height: 46px;
+  }
+  .vaquitaName {
+    img {
+      height: 46px;
+    }
   }
 }

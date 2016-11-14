@@ -1,3 +1,67 @@
+.container-taqueria {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.phone-number-taqueria {
+  display: flex;
+  width: 20%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: $redbackg;
+  margin-bottom: 5%;
+  .fa-phone-square {
+    font-size: 1em;
+    margin-top: 3px;
+    margin-right: 5px;
+  }
+  h4 {
+    margin: 0;
+  }
+}
+
+
+.address-taqueria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h4 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  .name-taqueria {
+    font-family: Indie FLower;
+  }
+}
+.fotos-taqueria {
+  margin-left: 5%;
+  margin-top: 1em;
+}
+.fotos-taqueria:hover, .fotos-taqueria-2:hover {
+  .foto-text {
+    opacity: 1;
+  }
+}
+.fotos-taqueria-2 {
+  margin-left: 60%;
+  margin-top: 3em;
+}
+.fotos-taqueria, .fotos-taqueria-2 {
+  color: $headerfont;
+  .foto-text {
+    padding-left: 67%;
+    padding-top: 61%;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+}
+
 .menu-taqueria {
   width: 80%;
   font-size: 3em;

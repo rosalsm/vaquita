@@ -7,11 +7,18 @@
 //click on the nav, hide dropdown
     $('.nav-container a[href]').on('click', function(){
       $('.dropdown').removeClass('show').addClass('dropdownMenu');
+      $('.headerContent .navi').removeClass('showing').addClass ('nav-container');
     });
 //click on the inside dropdown, show/hide dropdown
    $('.dropdown a[href]').on('click',function(){
      $('.dropdown').removeClass('show').addClass('dropdownMenu');
    });
+
+//Hamburger
+  $('.fa-bars').on('click', function(){
+    $('.headerContent nav').toggleClass('showing nav-container');
+  });
+
 
 
 //shrinking header on scrolling

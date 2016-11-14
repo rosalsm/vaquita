@@ -2,23 +2,19 @@
 
 
 .locations-container{
-  //position: fixed;
   display: flex;
   margin-top: 4em;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   align-items: flex-start;;
   flex-direction: column;;
-  //margin-right: 1em;
 }
 
 div.restaurante, div.taqueria{
   width: 70%;
-  border-radius: 1em;
+  //border-radius: 1em;
   margin-left: 14%;
-  //margin-right: 1%;
   margin-top: 1em;
-  //border: thin solid $darkgreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +24,7 @@ div.restaurante, div.taqueria{
 p.name-location {
   font-size: 1.5em;
   font-family: Indie FLower;
+  font-weight: bolder;
 }
 
 div.foto-address-location {
@@ -45,4 +42,31 @@ address.address-location {
 
 iframe {
   margin-bottom: 0.5em;
+  width: 80%;
+  height: 250px;
+  border: 0.2em solid #444442;
+}
+
+@media (max-width: 767px) {
+
+
+  .locations-container{
+    // width: 100vw;
+  }
+  div.restaurante, div.taqueria{
+    width: 100%;
+    margin-left: 5%;
+  }
+
+  div.foto-address-location {
+    flex-direction: column;
+    width: 100%;
+  }
+  address.address-location {
+    width: 95%;
+  }
+  iframe {
+    width: 90%;
+  }
+
 }
