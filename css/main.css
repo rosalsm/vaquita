@@ -360,6 +360,21 @@ iframe {
   display: flex;
   flex-direction: row; }
 
+.phone-number-restaurant {
+  display: flex;
+  width: 20%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: #EA2306;
+  margin-bottom: 5%; }
+  .phone-number-restaurant .fa-phone-square {
+    font-size: 1em;
+    margin-top: 3px;
+    margin-right: 5px; }
+  .phone-number-restaurant h4 {
+    margin: 0; }
+
 .fotos-menu-rest {
   width: 25%;
   line-height: 0;
