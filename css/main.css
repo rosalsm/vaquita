@@ -380,6 +380,9 @@ iframe {
   .phone-number-restaurant h4 {
     margin: 0; }
 
+.just-for-mobile {
+  display: none; }
+
 .fotos-menu-rest {
   width: 25%;
   line-height: 0;
@@ -439,6 +442,10 @@ iframe {
     margin-left: 0.4em;
     margin-top: 0;
     margin-bottom: 0.5em; }
+
+@media (max-width: 767px) {
+  .just-for-mobile {
+    display: block; } }
 
 .container-taqueria {
   margin-top: 5em;
