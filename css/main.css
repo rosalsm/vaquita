@@ -371,7 +371,8 @@ iframe {
   right: 0;
   bottom: 0;
   color: #EA2306;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  z-index: 2; }
   .phone-number-restaurant .fa-phone-square {
     font-size: 1em;
     margin-top: 3px;
@@ -388,17 +389,39 @@ iframe {
   .fotos-menu-rest .fotos-rest {
     width: 100%; }
 
-.inside-fotorest1, .inside-fotorest2, .inside-fotorest3, .inside-fotorest4, .inside-fotorest5, .inside-fotorest6, .inside-fotorest7, .inside-fotorest8 {
+.inside-fotorest1,
+.inside-fotorest2,
+.inside-fotorest3,
+.inside-fotorest4,
+.inside-fotorest5,
+.inside-fotorest6,
+.inside-fotorest7,
+.inside-fotorest8 {
   position: relative;
   z-index: 1; }
-  .inside-fotorest1 h3, .inside-fotorest2 h3, .inside-fotorest3 h3, .inside-fotorest4 h3, .inside-fotorest5 h3, .inside-fotorest6 h3, .inside-fotorest7 h3, .inside-fotorest8 h3 {
+  .inside-fotorest1 h3,
+  .inside-fotorest2 h3,
+  .inside-fotorest3 h3,
+  .inside-fotorest4 h3,
+  .inside-fotorest5 h3,
+  .inside-fotorest6 h3,
+  .inside-fotorest7 h3,
+  .inside-fotorest8 h3 {
     position: absolute;
     font-size: 0rem;
     color: #F7F1DB;
     margin-top: 92%;
-    margin-left: 5%; }
+    margin-left: 5%;
+    transition: all 0.4s; }
 
-.inside-fotorest1:hover h3, .inside-fotorest2:hover h3, .inside-fotorest3:hover h3, .inside-fotorest4:hover h3, .inside-fotorest5:hover h3, .inside-fotorest6:hover h3, .inside-fotorest7:hover h3, .inside-fotorest8:hover h3 {
+.inside-fotorest1:hover h3,
+.inside-fotorest2:hover h3,
+.inside-fotorest3:hover h3,
+.inside-fotorest4:hover h3,
+.inside-fotorest5:hover h3,
+.inside-fotorest6:hover h3,
+.inside-fotorest7:hover h3,
+.inside-fotorest8:hover h3 {
   font-size: 2rem; }
 
 .menu-restaurant {

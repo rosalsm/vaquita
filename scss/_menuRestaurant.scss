@@ -13,6 +13,7 @@
   bottom: 0;
   color: $redbackg;
   margin-bottom: 5%;
+  z-index: 2;
   .fa-phone-square {
     font-size: 1em;
     margin-top: 3px;
@@ -36,63 +37,35 @@
     width: 100%;
   }
 }
-.inside-fotorest1, .inside-fotorest2, .inside-fotorest3, .inside-fotorest4, .inside-fotorest5, .inside-fotorest6, .inside-fotorest7, .inside-fotorest8{
+.inside-fotorest1,
+.inside-fotorest2,
+.inside-fotorest3,
+.inside-fotorest4,
+.inside-fotorest5,
+.inside-fotorest6,
+.inside-fotorest7,
+.inside-fotorest8 {
   position: relative;
   z-index: 1;
     h3 {
       position: absolute;
       font-size: 0rem;
       color: $headerfont;
-      //float: right;
       margin-top: 92%;
       margin-left: 5%;
+      transition: all 0.4s;
     }
   }
-  // .inside-fotorest5 {
-  //   .contenth3 {
-  //     position: absolute;
-  //     //float: left;
-  //     top: 0;
-  //     right: 0;
-  //     width: 30%;
-  //   }
-  // }
 
-// .inside-fotorest1 {
-//   .contenth3 {
-//     position: absolute;
-//     //float: left;
-//     top: 0;
-//     left: 0;
-//     width: 30%;
-//   }
-// }
-// .inside-fotorest2 {
-//   .contenth3 {
-//     position: absolute;
-//     top: 80%;
-//     left: 0;
-//     width: 30%;
-// }
-// }
-// .inside-fotorest3 {
-//   .contenth3 {
-//     position: absolute;
-//     top: 100%;
-//     left: 0;
-//     width: 30%;
-// }
-// }
-// .inside-fotorest4 {
-//   .contenth3 {
-//     position: absolute;
-//     top: 150%;
-//     left: 0;
-//     width: 30%;
-// }
-// }
 
-.inside-fotorest1:hover, .inside-fotorest2:hover, .inside-fotorest3:hover, .inside-fotorest4:hover, .inside-fotorest5:hover, .inside-fotorest6:hover, .inside-fotorest7:hover, .inside-fotorest8:hover {
+.inside-fotorest1:hover,
+.inside-fotorest2:hover,
+.inside-fotorest3:hover,
+.inside-fotorest4:hover,
+.inside-fotorest5:hover,
+.inside-fotorest6:hover,
+.inside-fotorest7:hover,
+.inside-fotorest8:hover {
   h3 {
     font-size: 2rem;
   }
