@@ -306,7 +306,9 @@ img.NYT-logo {
   .img-container-home {
     flex-direction: column; }
   .all-right {
-    width: 100%; } }
+    width: 100%; }
+  div.text-nyt p {
+    font-size: 0.5em; } }
 
 .locations-container {
   display: flex;
@@ -366,17 +368,21 @@ iframe {
 
 .phone-number-restaurant {
   display: flex;
-  width: 20%;
+  width: 14%;
   position: fixed;
   right: 0;
   bottom: 0;
   color: #EA2306;
   margin-bottom: 5%;
+  margin-right: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
   z-index: 2; }
   .phone-number-restaurant .fa-phone-square {
     font-size: 1em;
     margin-top: 3px;
-    margin-right: 5px; }
+    margin-right: 5px;
+    margin-left: 3px; }
   .phone-number-restaurant h4 {
     margin: 0; }
 
@@ -444,8 +450,24 @@ iframe {
     margin-bottom: 0.5em; }
 
 @media (max-width: 767px) {
+  .container-menurest {
+    margin-top: 3.9em; }
+  .menu-restaurant {
+    width: 75%; }
+  .restaurant-show {
+    margin-top: 2em; }
   .just-for-mobile {
-    display: block; } }
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    .just-for-mobile .fotos-rest {
+      width: 100%; }
+  .no-for-mobile {
+    display: none; }
+  .phone-number-restaurant {
+    width: 48%;
+    background-color: rgba(228, 224, 219, 0.8); } }
 
 .container-taqueria {
   margin-top: 5em;
