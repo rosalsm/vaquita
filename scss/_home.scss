@@ -82,12 +82,16 @@ img.NYT-logo {
   }
 
   .img-container-home {
-
+    //margin-top: -0.5em;
     flex-direction: column;
   }
 
   .all-right {
     width: 100%;
   }
-
+  div.text-nyt {
+    p {
+      font-size: 0.5em;
+    }
+  }
 }
