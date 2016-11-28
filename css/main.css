@@ -368,7 +368,8 @@ iframe {
 
 .phone-number-restaurant {
   display: flex;
-  width: 14%;
+  flex-direction: row;
+  width: 8em;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -476,23 +477,30 @@ iframe {
 
 .phone-number-taqueria {
   display: flex;
-  width: 20%;
+  flex-direction: row;
+  width: 8em;
   position: fixed;
   right: 0;
   bottom: 0;
   color: #EA2306;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  margin-right: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  z-index: 2; }
   .phone-number-taqueria .fa-phone-square {
     font-size: 1em;
     margin-top: 3px;
-    margin-right: 5px; }
+    margin-right: 5px;
+    margin-left: 3px; }
   .phone-number-taqueria h4 {
     margin: 0; }
 
 .address-taqueria {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 1em; }
   .address-taqueria h4 {
     margin: 0; }
   .address-taqueria p {
@@ -500,21 +508,46 @@ iframe {
   .address-taqueria .name-taqueria {
     font-family: Indie FLower; }
 
-.fotos-taqueria {
+.taqueria-part1, .taqueria-part2, .taqueria-part3 {
+  display: flex;
+  flex-direction: row;
   margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1em; }
+
+.taqueria-menu1 {
+  width: 80%;
+  font-size: 0.6em;
+  margin-left: 1.5em; }
+  .taqueria-menu1 h3 {
+    font-weight: bolder;
+    margin-bottom: 0.2em; }
+  .taqueria-menu1 p {
+    margin-left: 0.4em;
+    margin-top: 0;
+    margin-bottom: 0.5em; }
+
+.taqueria-menu2 {
+  width: 80%;
+  font-size: 0.6em; }
+  .taqueria-menu2 h3 {
+    font-weight: bolder;
+    margin-bottom: 0.2em; }
+  .taqueria-menu2 p {
+    margin-left: 0.4em;
+    margin-top: 0;
+    margin-bottom: 0.5em; }
+
+.fotos-taqueria {
   margin-top: 1em; }
 
 .fotos-taqueria:hover .foto-text, .fotos-taqueria-2:hover .foto-text {
   opacity: 1; }
 
-.fotos-taqueria-2 {
-  margin-left: 60%;
-  margin-top: 3em; }
-
 .fotos-taqueria, .fotos-taqueria-2 {
   color: #F7F1DB; }
   .fotos-taqueria .foto-text, .fotos-taqueria-2 .foto-text {
-    padding-left: 67%;
+    padding-left: 60%;
     padding-top: 61%;
     opacity: 0;
     transition: all 0.4s; }

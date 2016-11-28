@@ -7,7 +7,8 @@
 }
 .phone-number-restaurant {
   display: flex;
-  width: 14%;
+  flex-direction: row;
+  width: 8em;
   position: fixed;
   right: 0;
   bottom: 0;
