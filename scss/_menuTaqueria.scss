@@ -2,7 +2,7 @@
   margin-top: 5em;
   display: flex;
   flex-direction: column;
-
+  width: 100vw;
 }
 
 
@@ -108,4 +108,12 @@
   font-size: 3em;
   margin-left: 5em;
   margin-top: 3em;
+}
+
+
+//MOBILE VIEW
+
+@media (max-width: 767px) {
+
+
 }
