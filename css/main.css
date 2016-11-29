@@ -285,7 +285,7 @@ div.text-nyt {
   height: 50%;
   font-size: 0.8em; }
   div.text-nyt .black-border {
-    background: url(/img/greywood.jpg) no-repeat center center fixed;
+    background: url(/img/greywood.jpg) repeat center center fixed;
     height: 87.4%;
     width: 95%;
     margin: 2.8% 2.5% 2.5% 2.5%; }
@@ -467,14 +467,13 @@ iframe {
   .no-for-mobile {
     display: none; }
   .phone-number-restaurant {
-    width: 48%;
+    width: 55%;
     background-color: rgba(228, 224, 219, 0.8); } }
 
 .container-taqueria {
   margin-top: 5em;
   display: flex;
-  flex-direction: column;
-  width: 100vw; }
+  flex-direction: column; }
 
 .phone-number-taqueria {
   display: flex;
@@ -539,15 +538,16 @@ iframe {
     margin-top: 0;
     margin-bottom: 0.5em; }
 
-.fotos-taqueria {
-  margin-top: 1em; }
-
-.fotos-taqueria:hover .foto-text, .fotos-taqueria-2:hover .foto-text {
+.fotos-taqueria:hover .foto-text {
   opacity: 1; }
 
-.fotos-taqueria, .fotos-taqueria-2 {
-  color: #F7F1DB; }
-  .fotos-taqueria .foto-text, .fotos-taqueria-2 .foto-text {
+.fotos-taqueria {
+  color: #F7F1DB;
+  margin-top: 1em; }
+  .fotos-taqueria img {
+    width: 100%;
+    min-height: 500px; }
+  .fotos-taqueria .foto-text {
     padding-left: 60%;
     padding-top: 61%;
     opacity: 0;
@@ -558,6 +558,26 @@ iframe {
   font-size: 3em;
   margin-left: 5em;
   margin-top: 3em; }
+
+@media (max-width: 767px) {
+  .container-taqueria {
+    width: 100vw; }
+  .address-taqueria {
+    width: 100%; }
+    .address-taqueria .address {
+      width: 60%; }
+  .taqueria-part1, .taqueria-part2, .taqueria-part3 {
+    width: 90%; }
+  .taqueria-part1, .taqueria-part3 {
+    flex-direction: column; }
+  .taqueria-part2 {
+    flex-direction: column-reverse; }
+  .fotos-taqueria {
+    width: 100%; }
+    .fotos-taqueria img {
+      height: 50%; }
+  .taqueria-menu1, .taqueria-menu2 {
+    width: 90%; } }
 
 /*
  * Hide only visually, but have it available for screen readers:

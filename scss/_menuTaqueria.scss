@@ -2,7 +2,7 @@
   margin-top: 5em;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  //width: 100vw;
 }
 
 
@@ -85,16 +85,21 @@
 }
 
 .fotos-taqueria {
-  margin-top: 1em;
+
 }
-.fotos-taqueria:hover, .fotos-taqueria-2:hover {
+.fotos-taqueria:hover {
   .foto-text {
     opacity: 1;
   }
 }
 
-.fotos-taqueria, .fotos-taqueria-2 {
+.fotos-taqueria {
   color: $headerfont;
+  margin-top: 1em;
+  img {
+    width: 100%;
+    min-height: 500px;
+  }
   .foto-text {
     padding-left: 60%;
     padding-top: 61%;
@@ -114,6 +119,41 @@
 //MOBILE VIEW
 
 @media (max-width: 767px) {
+  .container-taqueria {
+    width: 100vw;
+  }
+
+  .address-taqueria {
+    //justify-content: center;
+  }
+
+  .address-taqueria {
+    width: 100%;
+    .address {
+      width: 60%;
+    }
+  }
+
+  .taqueria-part1, .taqueria-part2, .taqueria-part3 {
+    width: 90%;
+  }
+  .taqueria-part1, .taqueria-part3 {
+    flex-direction: column;
+  }
+  .taqueria-part2 {
+    flex-direction: column-reverse;
+  }
+  .fotos-taqueria {
+    width: 100%;
+    img {
+      //max-height: 350px;
+      height: 50%;
+    }
+  }
+  .taqueria-menu1, .taqueria-menu2 {
+    width: 90%;
+  }
+
 
 
 }
