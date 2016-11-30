@@ -2,22 +2,28 @@
   margin-top: 5em;
   display: flex;
   flex-direction: column;
-
+  //width: 100vw;
 }
 
 
 .phone-number-taqueria {
   display: flex;
-  width: 20%;
+  flex-direction: row;
+  width: 8em;
   position: fixed;
   right: 0;
   bottom: 0;
   color: $redbackg;
   margin-bottom: 5%;
+  margin-right: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  z-index: 2;
   .fa-phone-square {
     font-size: 1em;
     margin-top: 3px;
     margin-right: 5px;
+    margin-left: 3px;
   }
   h4 {
     margin: 0;
@@ -29,6 +35,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1em;
   h4 {
     margin: 0;
   }
@@ -39,23 +46,62 @@
     font-family: Indie FLower;
   }
 }
-.fotos-taqueria {
+
+.taqueria-part1, .taqueria-part2, .taqueria-part3 {
+  display: flex;
+  flex-direction: row;
   margin-left: 5%;
+  margin-right: 5%;
   margin-top: 1em;
 }
-.fotos-taqueria:hover, .fotos-taqueria-2:hover {
+
+.taqueria-menu1 {
+  width: 80%;
+  font-size: 0.6em;
+  margin-left: 1.5em;
+  h3 {
+    font-weight: bolder;
+    margin-bottom: 0.2em;
+  }
+  p {
+    margin-left: 0.4em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+}
+
+.taqueria-menu2 {
+  width: 80%;
+  font-size: 0.6em;
+  h3 {
+    font-weight: bolder;
+    margin-bottom: 0.2em;
+  }
+  p {
+    margin-left: 0.4em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+}
+
+.fotos-taqueria {
+
+}
+.fotos-taqueria:hover {
   .foto-text {
     opacity: 1;
   }
 }
-.fotos-taqueria-2 {
-  margin-left: 60%;
-  margin-top: 3em;
-}
-.fotos-taqueria, .fotos-taqueria-2 {
+
+.fotos-taqueria {
   color: $headerfont;
+  margin-top: 1em;
+  img {
+    width: 100%;
+    min-height: 500px;
+  }
   .foto-text {
-    padding-left: 67%;
+    padding-left: 60%;
     padding-top: 61%;
     opacity: 0;
     transition: all 0.4s;
@@ -67,4 +113,47 @@
   font-size: 3em;
   margin-left: 5em;
   margin-top: 3em;
+}
+
+
+//MOBILE VIEW
+
+@media (max-width: 767px) {
+  .container-taqueria {
+    width: 100vw;
+  }
+
+  .address-taqueria {
+    //justify-content: center;
+  }
+
+  .address-taqueria {
+    width: 100%;
+    .address {
+      width: 60%;
+    }
+  }
+
+  .taqueria-part1, .taqueria-part2, .taqueria-part3 {
+    width: 90%;
+  }
+  .taqueria-part1, .taqueria-part3 {
+    flex-direction: column;
+  }
+  .taqueria-part2 {
+    flex-direction: column-reverse;
+  }
+  .fotos-taqueria {
+    width: 100%;
+    img {
+      //max-height: 350px;
+      height: 50%;
+    }
+  }
+  .taqueria-menu1, .taqueria-menu2 {
+    width: 90%;
+  }
+
+
+
 }

@@ -7,7 +7,8 @@
 }
 .phone-number-restaurant {
   display: flex;
-  width: 14%;
+  flex-direction: row;
+  width: 8em;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -125,7 +126,7 @@
   display: none;
 }
 .phone-number-restaurant {
-  width: 48%;
+  width: 55%;
   background-color: rgba(228, 224, 219, 0.8);
 }
 
