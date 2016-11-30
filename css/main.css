@@ -579,6 +579,57 @@ iframe {
   .taqueria-menu1, .taqueria-menu2 {
     width: 90%; } }
 
+.container-specials {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw; }
+
+.container-fotos-specials-1,
+.container-fotos-specials-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 0;
+  width: 100vw; }
+
+.fotospecials1,
+.fotospecials2,
+.fotospecials3,
+.fotospecials4,
+.fotospecials5,
+.fotospecials6,
+.fotospecials7 {
+  width: 40%;
+  position: relative;
+  z-index: 1; }
+  .fotospecials1 h3,
+  .fotospecials2 h3,
+  .fotospecials3 h3,
+  .fotospecials4 h3,
+  .fotospecials5 h3,
+  .fotospecials6 h3,
+  .fotospecials7 h3 {
+    position: absolute;
+    font-size: 0rem;
+    color: #F7F1DB;
+    margin-top: 92%;
+    margin-left: 5%;
+    transition: all 0.4s; }
+
+.fotospecials1:hover h3,
+.fotospecials2:hover h3,
+.fotospecials3:hover h3,
+.fotospecials4:hover h3,
+.fotospecials5:hover h3,
+.fotospecials6:hover h3,
+.fotospecials7:hover h3 {
+  font-size: 2rem; }
+
+.special {
+  width: 100%; }
+
 /*
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
