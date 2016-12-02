@@ -580,19 +580,12 @@ iframe {
     width: 90%; } }
 
 .container-specials {
-  margin-top: 3em;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100vw; }
-
-.container-fotos-specials-1,
-.container-fotos-specials-2 {
+  margin-top: 4em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  line-height: 0;
-  width: 100vw; }
+  width: 100vw;
+  line-height: 0; }
 
 .fotospecials1,
 .fotospecials2,
@@ -600,23 +593,53 @@ iframe {
 .fotospecials4,
 .fotospecials5,
 .fotospecials6,
-.fotospecials7 {
-  width: 40%;
+.fotospecials7,
+.fotospecials8,
+.fotospecials9 {
+  width: 33.33%;
   position: relative;
   z-index: 1; }
+  .fotospecials1 .shadow-specials,
+  .fotospecials2 .shadow-specials,
+  .fotospecials3 .shadow-specials,
+  .fotospecials4 .shadow-specials,
+  .fotospecials5 .shadow-specials,
+  .fotospecials6 .shadow-specials,
+  .fotospecials7 .shadow-specials,
+  .fotospecials8 .shadow-specials,
+  .fotospecials9 .shadow-specials {
+    opacity: 0;
+    background-color: #444444;
+    position: absolute;
+    margin-top: 80%;
+    width: 100%;
+    height: 1.5em; }
   .fotospecials1 h3,
   .fotospecials2 h3,
   .fotospecials3 h3,
   .fotospecials4 h3,
   .fotospecials5 h3,
   .fotospecials6 h3,
-  .fotospecials7 h3 {
+  .fotospecials7 h3,
+  .fotospecials8 h3,
+  .fotospecials9 h3 {
     position: absolute;
-    font-size: 0rem;
+    opacity: 0;
     color: #F7F1DB;
-    margin-top: 92%;
+    margin-top: 85%;
     margin-left: 5%;
     transition: all 0.4s; }
+
+.fotospecials1:hover .shadow-specials,
+.fotospecials2:hover .shadow-specials,
+.fotospecials3:hover .shadow-specials,
+.fotospecials4:hover .shadow-specials,
+.fotospecials5:hover .shadow-specials,
+.fotospecials6:hover .shadow-specials,
+.fotospecials7:hover .shadow-specials,
+.fotospecials8:hover .shadow-specials,
+.fotospecials9:hover .shadow-specials {
+  opacity: 0.4; }
 
 .fotospecials1:hover h3,
 .fotospecials2:hover h3,
@@ -624,11 +647,36 @@ iframe {
 .fotospecials4:hover h3,
 .fotospecials5:hover h3,
 .fotospecials6:hover h3,
-.fotospecials7:hover h3 {
-  font-size: 2rem; }
+.fotospecials7:hover h3,
+.fotospecials8:hover h3,
+.fotospecials9:hover h3 {
+  opacity: 1;
+  font-size: 1em; }
 
 .special {
   width: 100%; }
+
+@media (max-width: 767px) {
+  .fotospecials1,
+  .fotospecials2,
+  .fotospecials3,
+  .fotospecials4,
+  .fotospecials5,
+  .fotospecials6,
+  .fotospecials7,
+  .fotospecials8,
+  .fotospecials9 {
+    width: 50%; }
+  .fotospecials1:hover h3,
+  .fotospecials2:hover h3,
+  .fotospecials3:hover h3,
+  .fotospecials4:hover h3,
+  .fotospecials5:hover h3,
+  .fotospecials6:hover h3,
+  .fotospecials7:hover h3,
+  .fotospecials8:hover h3,
+  .fotospecials9:hover h3 {
+    font-size: 0.75em; } }
 
 /*
  * Hide only visually, but have it available for screen readers:

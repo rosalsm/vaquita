@@ -1,25 +1,15 @@
 
 .container-specials {
-  margin-top: 3em;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100vw;
-
-}
-
-.container-fotos-specials-1,
-.container-fotos-specials-2,  {
+  margin-top: 4em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  line-height: 0;
-  //margin-left: 5%;
-  //margin-right: 5%;
   width: 100vw;
+  line-height: 0;
 
 
 }
+
 
 .fotospecials1,
 .fotospecials2,
@@ -27,15 +17,26 @@
 .fotospecials4,
 .fotospecials5,
 .fotospecials6,
-.fotospecials7 {
-  width: 40%;
+.fotospecials7,
+.fotospecials8,
+.fotospecials9 {
+  width: 33.33%;
   position: relative;
   z-index: 1;
+    .shadow-specials {
+      opacity: 0;
+      background-color: $almostblack;
+      position: absolute;
+      margin-top: 80%;
+      //margin-left: 3%;
+      width: 100%;
+      height: 1.5em;
+    }
     h3 {
       position: absolute;
-      font-size: 0rem;
+      opacity: 0;
       color: $headerfont;
-      margin-top: 92%;
+      margin-top: 85%;
       margin-left: 5%;
       transition: all 0.4s;
     }
@@ -49,12 +50,52 @@
 .fotospecials4:hover,
 .fotospecials5:hover,
 .fotospecials6:hover,
-.fotospecials7:hover {
+.fotospecials7:hover,
+.fotospecials8:hover,
+.fotospecials9:hover  {
+  .shadow-specials {
+    opacity: 0.4;
+  }
   h3 {
-    font-size: 2rem;
+    opacity: 1;
+    font-size: 1em;
   }
 }
 
 .special {
   width: 100%;
+}
+
+
+//MOBILE VIEW
+
+@media (max-width: 767px) {
+
+  .fotospecials1,
+  .fotospecials2,
+  .fotospecials3,
+  .fotospecials4,
+  .fotospecials5,
+  .fotospecials6,
+  .fotospecials7,
+  .fotospecials8,
+  .fotospecials9 {
+    width: 50%;
+  }
+  .fotospecials1:hover,
+  .fotospecials2:hover,
+  .fotospecials3:hover,
+  .fotospecials4:hover,
+  .fotospecials5:hover,
+  .fotospecials6:hover,
+  .fotospecials7:hover,
+  .fotospecials8:hover,
+  .fotospecials9:hover  {
+
+    h3 {
+      font-size: 0.75em;
+    }
+  }
+
+
 }
